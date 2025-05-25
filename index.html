@@ -15,12 +15,16 @@
     <!-- navbar component -->
     <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
         <div class="container-fluid">
+
+            <!-- head -->
             <a class="navbar-brand" href="#">NobleNest</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
+            <!-- other nav elements -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
@@ -29,6 +33,8 @@
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">About</a>
                     </li>
+
+                    <!-- nav-dropdown -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
@@ -48,10 +54,14 @@
                         <a class="nav-link" href="contact.html">Contact US</a>
                     </li>
                 </ul>
+
+                <!-- search bar -->
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
                     <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
+
+                <!-- login/signup buttons -->
                 <div class="mx-2">
                     <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
                     <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#signupModal">Signup</button>
@@ -68,6 +78,8 @@
                     <h1 class="modal-title fs-5" id="exampleModalLabel">Login back to your NobleNest Account</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
+
+                <!-- form -->
                 <div class="modal-body">
                     <form>
                         <div class="mb-3">
@@ -79,10 +91,6 @@
                         <div class="mb-3">
                             <label for="exampleInputPassword1" class="form-label">Password</label>
                             <input type="password" class="form-control" id="exampleInputPassword1">
-                        </div>
-                        <div class="mb-3 form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
                         </div>
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
@@ -100,6 +108,8 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
+
+                    <!-- form -->
                     <form>
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Email address</label>
@@ -132,38 +142,49 @@
             <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
                 aria-label="Slide 3"></button>
         </div>
+
+        <!-- carousel item 1 -->
         <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="10000">
                 <img src="images/1.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h2>Welcome to iCoder</h2>
-                    <p>Technology News, Development and Trends.</p>
-                    <button class="btn btn-danger">Technology</button>
-                    <button class="btn btn-primary">Web Development</button>
-                    <button class="btn btn-success">Tech Fun</button>
+                <div class="carousel-caption d-none d-md-block text-light">
+                    <h2>Welcome to NobleNest</h2>
+                    <p>Your daily dose of tech insights, coding tips, and development trends. Stay ahead in the digital
+                        world with curated content for developers and tech enthusiasts.</p>
+                    <button class="btn btn-danger">Explore Tech</button>
+                    <button class="btn btn-primary">Start Learning</button>
+                    <button class="btn btn-success">Join Community</button>
                 </div>
             </div>
+
+            <!-- carousel item 2 -->
             <div class="carousel-item" data-bs-interval="2000">
                 <img src="images/2.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h2>The Best Coding Blog</h2>
-                    <p>Technology News, Development and Trends.</p>
-                    <button class="btn btn-danger">Technology</button>
-                    <button class="btn btn-primary">Web Development</button>
-                    <button class="btn btn-success">Tech Fun</button>
+                <div class="carousel-caption d-none d-md-block text-light">
+                    <h2>Your Go-To Coding Blog</h2>
+                    <p>Discover tutorials, industry updates, and project ideas tailored for web developers, coders, and
+                        tech learners.</p>
+                    <button class="btn btn-danger">Latest Articles</button>
+                    <button class="btn btn-primary">Web Dev Guides</button>
+                    <button class="btn btn-success">Fun Projects</button>
                 </div>
             </div>
+
+            <!-- carousel item 3 -->
             <div class="carousel-item">
                 <img src="images/3.jpg" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                    <h2>Award Winning Blog</h2>
-                    <p>Technology News, Development and Trends.</p>
-                    <button class="btn btn-danger">Technology</button>
-                    <button class="btn btn-primary">Web Development</button>
-                    <button class="btn btn-success">Tech Fun</button>
+                <div class="carousel-caption d-none d-md-block text-light">
+                    <h2>Recognized & Trusted Worldwide</h2>
+                    <p>Award-winning tech blog trusted by thousands of developers, featuring expert opinions, trend
+                        analysis, and hands-on coding content.</p>
+                    <button class="btn btn-danger">Tech Insights</button>
+                    <button class="btn btn-primary">Build with Us</button>
+                    <button class="btn btn-success">Stay Updated</button>
                 </div>
             </div>
         </div>
+
+        <!-- buttons -->
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
@@ -176,40 +197,50 @@
 
     <!-- component from blog example -->
     <div class="container my-4">
+
+        <!-- row 1 -->
         <div class="row mb-2">
+
+            <!-- box 1 -->
             <div class="col-md-6">
                 <div
                     class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                    <div class="col p-4 d-flex flex-column position-static"> <strong
-                            class="d-inline-block mb-2 text-primary-emphasis">World</strong>
-                        <h3 class="mb-0">Global Conferences</h3>
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-primary-emphasis">World</strong>
+                        <h3 class="mb-0">Global Tech Conferences 2025</h3>
                         <div class="mb-1 text-body-secondary">Nov 12</div>
-                        <p class="card-text mb-auto">This is a wider card with supporting text below as a natural
-                            lead-in to
-                            additional content.</p> <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                        <p class="card-text mb-auto">Join top developers and tech leaders from across the globe to
+                            discuss AI, Web 3.0, and the future of programming at the biggest conferences of the year.
+                        </p>
+                        <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
                             Continue reading
                             <svg class="bi" aria-hidden="true">
                                 <use xlink:href="#chevron-right"></use>
-                            </svg> </a>
+                            </svg>
+                        </a>
                     </div>
                     <div class="col-auto d-none d-lg-block">
                         <img width="200" height="250px" src="images/thumb1.jpg" alt="">
                     </div>
                 </div>
             </div>
+
+            <!-- box 2 -->
             <div class="col-md-6">
                 <div
                     class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                    <div class="col p-4 d-flex flex-column position-static"> <strong
-                            class="d-inline-block mb-2 text-success-emphasis">Design</strong>
-                        <h3 class="mb-0">Learn Web Design</h3>
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success-emphasis">Design</strong>
+                        <h3 class="mb-0">Master Modern Web Design</h3>
                         <div class="mb-1 text-body-secondary">Nov 11</div>
-                        <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to
-                            additional content.</p> <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                        <p class="mb-auto">Explore the latest trends in responsive layouts, UI/UX principles, and design
+                            systems. Perfect for beginners and intermediate front-end developers.</p>
+                        <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
                             Continue reading
                             <svg class="bi" aria-hidden="true">
                                 <use xlink:href="#chevron-right"></use>
-                            </svg> </a>
+                            </svg>
+                        </a>
                     </div>
                     <div class="col-auto d-none d-lg-block">
                         <img width="200" height="250px" src="images/thumb2.jpg" alt="">
@@ -217,43 +248,52 @@
                 </div>
             </div>
         </div>
+
+        <!-- row 2 -->
         <div class="row mb-2">
+
+            <!-- box 3 -->
             <div class="col-md-6">
                 <div
                     class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                    <div class="col p-4 d-flex flex-column position-static"> <strong
-                            class="d-inline-block mb-2 text-primary-emphasis">World</strong>
-                        <h3 class="mb-0">Global Conferences</h3>
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-primary-emphasis">World</strong>
+                        <h3 class="mb-0">Top Developer Summits</h3>
                         <div class="mb-1 text-body-secondary">Nov 12</div>
-                        <p class="card-text mb-auto">This is a wider card with supporting text below as a natural
-                            lead-in to
-                            additional content.</p> <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                        <p class="card-text mb-auto">A deep dive into innovation with workshops, keynote sessions, and
+                            networking events curated for software engineers and tech entrepreneurs.</p>
+                        <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
                             Continue reading
                             <svg class="bi" aria-hidden="true">
                                 <use xlink:href="#chevron-right"></use>
-                            </svg> </a>
+                            </svg>
+                        </a>
                     </div>
                     <div class="col-auto d-none d-lg-block">
                         <img width="200" height="250px" src="images/thumb3.jpg" alt="">
                     </div>
                 </div>
             </div>
+
+            <!-- box 4 -->
             <div class="col-md-6">
                 <div
                     class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                    <div class="col p-4 d-flex flex-column position-static"> <strong
-                            class="d-inline-block mb-2 text-success-emphasis">Design</strong>
-                        <h3 class="mb-0">Learn Web Design</h3>
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success-emphasis">Design</strong>
+                        <h3 class="mb-0">Interactive CSS & JS Tricks</h3>
                         <div class="mb-1 text-body-secondary">Nov 11</div>
-                        <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to
-                            additional content.</p> <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
+                        <p class="mb-auto">Unlock powerful techniques to build beautiful, animated websites using modern
+                            CSS and JavaScript. Elevate your front-end skills with real-world projects.</p>
+                        <a href="#" class="icon-link gap-1 icon-link-hover stretched-link">
                             Continue reading
                             <svg class="bi" aria-hidden="true">
                                 <use xlink:href="#chevron-right"></use>
-                            </svg> </a>
+                            </svg>
+                        </a>
                     </div>
                     <div class="col-auto d-none d-lg-block">
-                        <img width="200" height="250px" src="images/" alt="">
+                        <img width="200" height="250px" src="images/thumb2.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -261,9 +301,10 @@
     </div>
 
     <!-- footer component from crousel -->
-    <footer class="container">
+    <footer class="container py-4 mt-5 border-top">
         <p class="float-end"><a href="#">Back to top</a></p>
-        <p>© 2025–2026 iCoder Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+        <p>© 2025–2026 NobleNest Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a> · <a
+                href="#">Contact</a></p>
     </footer>
 
     <!-- bootstrap js -->

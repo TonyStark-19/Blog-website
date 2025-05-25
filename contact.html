@@ -15,12 +15,16 @@
     <!-- navbar component -->
     <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">iCoder</a>
+
+            <!-- head -->
+            <a class="navbar-brand" href="#">NobleNest</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
+            <!-- other nav elements -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
@@ -29,6 +33,8 @@
                     <li class="nav-item">
                         <a class="nav-link" href="about.html">About</a>
                     </li>
+
+                    <!-- nav-dropdown -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
@@ -48,10 +54,14 @@
                         <a class="nav-link active" href="#">Contact US</a>
                     </li>
                 </ul>
+
+                <!-- search bar -->
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
                     <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
+
+                <!-- login/signup buttons -->
                 <div class="mx-2">
                     <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
                     <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#signupModal">Signup</button>
@@ -69,6 +79,8 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
+
+                    <!-- form -->
                     <form>
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Email address</label>
@@ -79,10 +91,6 @@
                         <div class="mb-3">
                             <label for="exampleInputPassword1" class="form-label">Password</label>
                             <input type="password" class="form-control" id="exampleInputPassword1">
-                        </div>
-                        <div class="mb-3 form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
                         </div>
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
@@ -100,6 +108,8 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
+
+                    <!-- form -->
                     <form>
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Email address</label>
@@ -122,69 +132,82 @@
         </div>
     </div>
 
-    <div class="container my-4">
-        <h2>Contact US</h2>
+    <div class="container my-4 w-85 border rounded px-5 py-4">
+        <h2>Contact Us</h2>
 
-        <!-- from component -->
-        <div class="container">
-            <form>
-                <div class="row mb-3">
-                    <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
-                    <div class="col-sm-10">
-                        <input type="email" class="form-control" id="inputEmail3">
+        <!-- form -->
+        <form>
+            <div class="form-group my-3">
+                <label for="exampleFormControlInput1" class="mb-1">Email address</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+
+            <div class="form-group mb-3">
+                <label for="exampleFormControlSelect1" class="mb-1">Select your Query</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                    <option>Web</option>
+                    <option>Tech Stack</option>
+                    <option>Technology</option>
+                    <option>Others</option>
+                </select>
+            </div>
+
+            <div class="form-group row">
+                <div class="col-sm-2">Are you a Member?</div>
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck1">
+                        <label class="form-check-label" for="gridCheck1">
+                            Yes
+                        </label>
                     </div>
                 </div>
-                <div class="row mb-3">
-                    <label for="inputPassword3" class="col-sm-2 col-form-label">Password</label>
-                    <div class="col-sm-10">
-                        <input type="password" class="form-control" id="inputPassword3">
+            </div>
+
+            <div class="form-group row">
+                <div class="col-sm-2">Are you a Professor?</div>
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck2">
+                        <label class="form-check-label" for="gridCheck2">
+                            Yes
+                        </label>
                     </div>
                 </div>
-                <fieldset class="row mb-3">
-                    <legend class="col-form-label col-sm-2 pt-0">Radios</legend>
-                    <div class="col-sm-10">
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1"
-                                value="option1" checked>
-                            <label class="form-check-label" for="gridRadios1">
-                                First radio
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2"
-                                value="option2">
-                            <label class="form-check-label" for="gridRadios2">
-                                Second radio
-                            </label>
-                        </div>
-                        <div class="form-check disabled">
-                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3"
-                                value="option3" disabled>
-                            <label class="form-check-label" for="gridRadios3">
-                                Third disabled radio
-                            </label>
-                        </div>
-                    </div>
-                </fieldset>
-                <div class="row mb-3">
-                    <div class="col-sm-10 offset-sm-2">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="gridCheck1">
-                            <label class="form-check-label" for="gridCheck1">
-                                Example checkbox
-                            </label>
-                        </div>
+            </div>
+
+            <div class="form-group row mb-3">
+                <div class="col-sm-2">Are you a Coder?</div>
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck3">
+                        <label class="form-check-label" for="gridCheck3">
+                            Yes
+                        </label>
                     </div>
                 </div>
-                <button type="submit" class="btn btn-primary">Sign in</button>
-            </form>
-        </div>
+            </div>
+
+            <div class="form-group mb-3">
+                <label for="exampleFormControlTextarea1" class="mb-1">Tell us about yourself</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+
+            <div class="form-group mb-3">
+                <label for="exampleFormControlTextarea2" class="mb-1">Elaborate Your Concern</label>
+                <textarea class="form-control" id="exampleFormControlTextarea2" rows="3"></textarea>
+            </div>
+
+            <button class="btn btn-primary">Submit</button>
+        </form>
+
     </div>
 
     <!-- footer component from crousel -->
-    <footer class="container">
+    <footer class="container py-4 mt-5 border-top">
         <p class="float-end"><a href="#">Back to top</a></p>
-        <p>© 2025–2026 iCoder Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+        <p>© 2025–2026 NobleNest Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a> · <a
+                href="#">Contact</a></p>
     </footer>
 
     <!-- bootstrap js -->

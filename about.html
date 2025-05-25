@@ -15,12 +15,16 @@
     <!-- navbar component -->
     <nav class="navbar bg-dark navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">iCoder</a>
+
+            <!-- head -->
+            <a class="navbar-brand" href="#">NobleNest</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
+            <!-- other nav elements -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
@@ -29,6 +33,8 @@
                     <li class="nav-item">
                         <a class="nav-link active" href="#">About</a>
                     </li>
+
+                    <!-- nav-dropdown -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
@@ -48,10 +54,14 @@
                         <a class="nav-link" href="contact.html">Contact US</a>
                     </li>
                 </ul>
+
+                <!-- search bar -->
                 <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
                     <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
+
+                <!-- login/signup buttons -->
                 <div class="mx-2">
                     <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
                     <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#signupModal">Signup</button>
@@ -69,6 +79,8 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
+
+                    <!-- form -->
                     <form>
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Email address</label>
@@ -79,10 +91,6 @@
                         <div class="mb-3">
                             <label for="exampleInputPassword1" class="form-label">Password</label>
                             <input type="password" class="form-control" id="exampleInputPassword1">
-                        </div>
-                        <div class="mb-3 form-check">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Check me out</label>
                         </div>
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
@@ -100,6 +108,8 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
+
+                    <!-- form -->
                     <form>
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Email address</label>
@@ -124,56 +134,57 @@
 
     <!-- component from crousel -->
     <div class="container my-4">
-        <!-- component from crousel example -->
-        <div class="row featurette d-flex justify-content-center align-items-center">
+
+        <!-- Featurette 1 -->
+        <div class="row featurette d-flex justify-content-between align-items-center mb-5">
             <div class="col-md-7">
-                <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span
-                        class="text-body-secondary">It’ll
-                        blow your mind.</span></h2>
-                <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting
-                    prose here.
-                </p>
+                <h2 class="featurette-heading fw-normal lh-1">Revolutionizing Web Development <span
+                        class="text-body-secondary">One Line of Code at a Time.</span></h2>
+                <p class="lead">Explore how modern web technologies are transforming the digital world. From responsive
+                    design to powerful frameworks, discover tools that empower developers to build smarter, faster, and
+                    better websites.</p>
             </div>
             <div class="col-md-5">
-                <img width="500" height="500px" class="img-fluid" src="images/about-1.jpg" alt="">
+                <img width="500" height="500" class="rounded" src="images/about-1.jpg"
+                    alt="Web development illustration">
             </div>
         </div>
 
-        <!-- component from crousel example -->
-        <div class="row featurette d-flex justify-content-center align-items-center">
+        <!-- Featurette 2 -->
+        <div class="row featurette d-flex justify-content-between align-items-center mb-5">
             <div class="col-md-7 order-md-2">
-                <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span
-                        class="text-body-secondary">It’ll
-                        blow your mind.</span></h2>
-                <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting
-                    prose here.
-                </p>
+                <h2 class="featurette-heading fw-normal lh-1">Design That Speaks Volumes <span
+                        class="text-body-secondary">Beyond Aesthetics.</span></h2>
+                <p class="lead">Great design is more than just colors and layout—it's about user experience,
+                    accessibility, and intuitive interactions. Learn how thoughtful design enhances functionality and
+                    keeps users engaged.</p>
             </div>
             <div class="col-md-5 order-md-1">
-                <img width="500" height="500px" src="images/about-2.jpg" alt="">
+                <img width="500" height="500" class="rounded" src="images/about-2.jpg" alt="UI/UX design concept">
             </div>
         </div>
 
-        <!-- component from crousel example -->
-        <div class="row featurette d-flex justify-content-center align-items-center">
+        <!-- Featurette 3 -->
+        <div class="row featurette d-flex justify-content-between align-items-center">
             <div class="col-md-7">
-                <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span
-                        class="text-body-secondary">It’ll
-                        blow your mind.</span></h2>
-                <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting
-                    prose here.
-                </p>
+                <h2 class="featurette-heading fw-normal lh-1">Join the NobleNest Community <span
+                        class="text-body-secondary">Learn. Build. Inspire.</span></h2>
+                <p class="lead">Be part of a vibrant coding ecosystem where ideas flourish, projects grow, and
+                    innovation thrives. Whether you’re a beginner or a pro, our community is built to support and
+                    elevate your journey in tech.</p>
             </div>
             <div class="col-md-5">
-                <img width="500" height="500px" src="images/about-3.jpg" alt="">
+                <img width="500" height="500" class="rounded" src="images/about-3.jpg"
+                    alt="Tech community collaboration">
             </div>
         </div>
     </div>
 
     <!-- footer component from crousel -->
-    <footer class="container">
+    <footer class="container py-4 mt-5 border-top">
         <p class="float-end"><a href="#">Back to top</a></p>
-        <p>© 2025–2026 iCoder Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a></p>
+        <p>© 2025–2026 NobleNest Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a> · <a
+                href="#">Contact</a></p>
     </footer>
 
     <!-- bootstrap js -->
