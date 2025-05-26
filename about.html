@@ -71,11 +71,11 @@
     </nav>
 
     <!-- login modal  -->
-    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Login back to your NobleNest Account</h1>
+                    <h1 class="modal-title fs-5" id="loginModalLabel">Login back to your NobleNest Account</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -83,14 +83,18 @@
                     <!-- form -->
                     <form>
                         <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp">
-                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                            <label for="loginEmail" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="loginEmail" aria-describedby="loginEmailHelp">
+                            <div id="loginEmailHelp" class="form-text">We'll never share your email with anyone else.
+                            </div>
                         </div>
                         <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1">
+                            <label for="loginPassword" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="loginPassword">
+                        </div>
+                        <div class="mb-3 form-check">
+                            <input type="checkbox" class="form-check-input" id="loginRememberCheck" checked>
+                            <label class="form-check-label" for="loginRememberCheck">Remember me</label>
                         </div>
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
@@ -100,11 +104,11 @@
     </div>
 
     <!-- signup modal  -->
-    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="exampleModalLabel">Create your NobleNest Account</h1>
+                    <h1 class="modal-title fs-5" id="signupModalLabel">Create your NobleNest Account</h1>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
@@ -112,18 +116,21 @@
                     <!-- form -->
                     <form>
                         <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Email address</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp">
-                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                            <label for="signupEmail" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="signupEmail"
+                                aria-describedby="signupEmailHelp">
+                            <div id="signupEmailHelp" class="form-text">We'll never share your email with anyone else.
+                            </div>
+                        </div>
+                        <label for="signupPassword" class="form-label">Password</label>
+                        <input type="password" id="signupPassword" class="form-control"
+                            aria-describedby="signupPasswordHelp">
+                        <div id="signupPasswordHelp" class="form-text mb-3">
+                            Your password must be 8-20 characters long.
                         </div>
                         <div class="mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1">
-                        </div>
-                        <div class="mb-3">
-                            <label for="cexampleInputPassword1" class="form-label">Confirm Password</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1">
+                            <label for="signupConfirmPassword" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="signupConfirmPassword">
                         </div>
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
@@ -133,7 +140,7 @@
     </div>
 
     <!-- component from crousel -->
-    <div class="container my-4">
+    <div class="container my-5 w-100">
 
         <!-- Featurette 1 -->
         <div class="row featurette d-flex justify-content-between align-items-center mb-5">
