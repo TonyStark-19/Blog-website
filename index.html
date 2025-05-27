@@ -56,13 +56,13 @@
                 </ul>
 
                 <!-- search bar -->
-                <form class="d-flex" role="search">
+                <form class="d-flex me-2 mb-sm-2 mb-lg-0 mb-2" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
                     <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
 
                 <!-- login/signup buttons -->
-                <div class="mx-2">
+                <div class="my-sm-1 mb-lg-0">
                     <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
                     <button class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#signupModal">Signup</button>
                 </div>
@@ -155,11 +155,14 @@
             <div class="carousel-item active" data-bs-interval="10000">
                 <img src="images/2.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-flex justify-content-between align-items-center flex-column text-light">
-                    <h2>Welcome to NobleNest</h2>
-                    <p class="w-75">Your daily dose of tech insights, coding tips, and development trends. Stay ahead in
-                        the digital
-                        world with curated content for developers and tech enthusiasts.</p>
-                    <div class="button-wrap d-flex flex-row gap-2">
+                    <div class="text d-none d-md-flex d-flex justify-content-center align-items-center flex-column">
+                        <h2>Welcome to NobleNest</h2>
+                        <p class="w-75">Your daily dose of tech insights, coding tips, and development trends. Stay
+                            ahead in
+                            the digital
+                            world with curated content for developers and tech enthusiasts.</p>
+                    </div>
+                    <div class="button-wrap d-none d-sm-flex flex-row gap-2">
                         <button class="btn btn-danger">Explore Tech</button>
                         <button class="btn btn-primary">Start Learning</button>
                         <button class="btn btn-success">Join Community</button>
@@ -171,10 +174,13 @@
             <div class="carousel-item" data-bs-interval="2000">
                 <img src="images/1.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-flex justify-content-between align-items-center flex-column text-light">
-                    <h2>Your Go-To Coding Blog</h2>
-                    <p>Discover tutorials, industry updates, and project ideas tailored for web developers, coders, and
-                        tech learners.</p>
-                    <div class="button-wrap d-flex flex-row gap-2">
+                    <div class="text d-none d-md-flex d-flex justify-content-center align-items-center flex-column">
+                        <h2>Your Go-To Coding Blog</h2>
+                        <p>Discover tutorials, industry updates, and project ideas tailored for web developers, coders,
+                            and
+                            tech learners.</p>
+                    </div>
+                    <div class="button-wrap d-none d-sm-flex flex-row gap-2">
                         <button class="btn btn-danger">Latest Articles</button>
                         <button class="btn btn-primary">Web Dev Guides</button>
                         <button class="btn btn-success">Fun Projects</button>
@@ -186,10 +192,12 @@
             <div class="carousel-item">
                 <img src="images/3.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-flex justify-content-between align-items-center flex-column text-light">
-                    <h2>Recognized & Trusted Worldwide</h2>
-                    <p>Award-winning tech blog trusted by thousands of developers, featuring expert opinions, trend
-                        analysis, and hands-on coding content.</p>
-                    <div class="button-wrap d-flex flex-row gap-2">
+                    <div class="text d-none d-md-flex d-flex justify-content-center align-items-center flex-column">
+                        <h2>Recognized & Trusted Worldwide</h2>
+                        <p>Award-winning tech blog trusted by thousands of developers, featuring expert opinions, trend
+                            analysis, and hands-on coding content.</p>
+                    </div>
+                    <div class="button-wrap d-none d-sm-flex flex-row gap-2">
                         <button class="btn btn-danger">Tech Insights</button>
                         <button class="btn btn-primary">Build with Us</button>
                         <button class="btn btn-success">Stay Updated</button>
@@ -315,10 +323,10 @@
     </div>
 
     <!-- footer component from crousel -->
-    <footer class="container py-4 mt-5 border-top">
-        <p class="float-end"><a href="#">Back to top</a></p>
+    <footer class="container pb-3 pt-4 px-3 mt-5 border-top d-flex flex-md-row justify-content-between flex-column">
         <p>© 2025–2026 NobleNest Company, Inc. · <a href="#">Privacy</a> · <a href="#">Terms</a> · <a
                 href="#">Contact</a></p>
+        <p><a href="#">Back to top</a></p>
     </footer>
 
     <!-- bootstrap js -->
