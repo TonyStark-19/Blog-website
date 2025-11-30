@@ -3,9 +3,7 @@
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
 ![Responsive Design](https://img.shields.io/badge/Responsive_Design-FECD1A?logo=responsive&logoColor=black)
 ![Bootstrap](https://img.shields.io/badge/Bootstrap-7A13F5?logo=bootstrap&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?logo=git&logoColor=white)
-![GitHub Pages](https://img.shields.io/badge/Hosted_on-GitHub_Pages-000000?logo=githubpages&logoColor=white)
-![VS Code](https://img.shields.io/badge/Editor-VS_Code-0078D4?logo=visualstudiocode&logoColor=white)
+![Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black?logo=vercel)
 
 A clean, responsive Blog Website built using HTML5, CSS3, and Bootstrap 5. <br />
 This project was created as a practice exercise during my Bootstrap learning journey.
